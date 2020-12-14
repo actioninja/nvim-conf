@@ -1,4 +1,10 @@
-call plug#begin('~/.config/nvim/plugged')
+if has('win32')
+  let configdir = '$LOCALAPPDATA/nvim/plugged'
+else
+  let configdir = '$LOCALAPPDATA/nvim/plugged'
+endif
+
+call plug#begin(configdir)
 
 Plug 'cocopon/iceberg.vim'
 Plug 'tpope/vim-fugitive'
