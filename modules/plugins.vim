@@ -1,7 +1,7 @@
 if has('win32')
   let configdir = '$LOCALAPPDATA/nvim/plugged'
 else
-  let configdir = '$LOCALAPPDATA/nvim/plugged'
+  let configdir = '~/.config/nvim/plugged'
 endif
 
 call plug#begin(configdir)
@@ -18,7 +18,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzz.vim'
+Plug 'junegunn/fzf.vim'
 
 Plug 'cohama/lexima.vim'
 
